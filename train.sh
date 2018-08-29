@@ -1,0 +1,1 @@
+python train_model.py --pretrained_model /home/shirundong/models/image/imagenet/resnext0810/resnext0810.ckpt --CUDA_VISIBLE_DEVICES 0,1,2,3,4,5,6,7 --model_name resnext-704 --nrof_class 5 --finetuning True --dic_loc ./data/704 --only_weight True
