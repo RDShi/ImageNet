@@ -1,12 +1,15 @@
 A program that trains ImageNet and test results.
+
 Contains the implementation of the ResNeXt and Inceotion_Resnet_v2.
+
 Contains a pre-training ResNeXt. 
 
 train model:
+
+```sh
 usage: train_model.py [-h] [--batch_size BATCH_SIZE]
                       [--pretrained_model PRETRAINED_MODEL] [--epochs EPOCHS]
-                      [--CUDA_VISIBLE_DEVICES CUDA_VISIBLE_DEVICES]
-                      [--epoch_size EPOCH_SIZE]
+                      [--CUDA_VISIBLE_DEVICES CUDA_VISIBLE_DEVICES]                              [--epoch_size EPOCH_SIZE]
                       [--lr_schedule_file LR_SCHEDULE_FILE]
                       [--model_name MODEL_NAME] [--display_step DISPLAY_STEP]
                       [--evaluate_step EVALUATE_STEP]
@@ -49,10 +52,11 @@ optional arguments:
   --model_def MODEL_DEF
                         Model definition. Points to a module containing the
                         definition of the inference graph.
+```
 
 
-
-train model:
+test model:
+```sh
 usage: test_model.py [-h] [--pretrained_model PRETRAINED_MODEL]
                      [--CUDA_VISIBLE_DEVICES CUDA_VISIBLE_DEVICES]
                      [--model_name MODEL_NAME] [--data_dir DATA_DIR]
@@ -75,4 +79,4 @@ optional arguments:
   --model_def MODEL_DEF
                         Model definition. Points to a module containing the
                         definition of the inference graph.
-
+```
