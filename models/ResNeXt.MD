@@ -1,7 +1,3 @@
-
-$$y=x+\sum_{i=1}^C T_i(x)$$
-
-
 ## Implementation details
 
 ### input
